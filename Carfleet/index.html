@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO: Primary -->
+  <title>Drivo – Self Drive Cars in Chennai | Guduvanchery, SRM, Tambaram, Kattankulathur</title>
+  <meta name="description" content="Rent self drive cars in Chennai, Guduvanchery, SRM, Tambaram, Kattankulathur, Potheri, Maraimalai Nagar & Urapakkam. Affordable car rental starting ₹699/day. Book Hyundai Exter now." />
+  <meta name="keywords" content="self drive cars Chennai, car rent Guduvanchery, self drive car SRM University, car rental Tambaram, car hire Kattankulathur, car rent Potheri, self drive car Maraimalai Nagar, car rental Urapakkam, self drive car near me, affordable car rental Chennai, Hyundai Exter self drive, new car rental Chennai, drivo car rental" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Drivo" />
+  <link rel="canonical" href="https://drivo.in/" />
+
+  <!-- SEO: Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Drivo – Self Drive Cars in Chennai & Guduvanchery" />
+  <meta property="og:description" content="Affordable self drive car rentals in Chennai, Guduvanchery, SRM, Tambaram, Kattankulathur and nearby areas. Book a Hyundai Exter online." />
+  <meta property="og:url" content="https://drivo.in/" />
+  <meta property="og:site_name" content="Drivo" />
+
+  <!-- SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Drivo – Self Drive Cars Chennai" />
+  <meta name="twitter:description" content="Rent self drive cars in Guduvanchery, SRM, Tambaram & Chennai. Book online in 2 minutes." />
+
+  <!-- SEO: Structured Data – Local Business + Vehicle Rental -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AutoRental",
+        "@id": "https://drivo.in/",
+        "name": "Drivo",
+        "description": "Self drive car rental service in Chennai, Guduvanchery, SRM, Tambaram, Kattankulathur, Potheri, Maraimalai Nagar and Urapakkam.",
+        "url": "https://drivo.in/",
+        "telephone": "+919840000000",
+        "priceRange": "₹₹",
+        "image": "https://drivo.in/og-image.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Guduvanchery",
+          "addressLocality": "Guduvanchery",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "603202",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "12.7183",
+          "longitude": "80.0502"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "areaServed": [
+          "Chennai", "Guduvanchery", "Tambaram", "Kattankulathur",
+          "Potheri", "Maraimalai Nagar", "Urapakkam", "SRM University"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Self Drive Car Rentals",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Vehicle",
+                "name": "Hyundai Exter",
+                "vehicleTransmission": "Manual",
+                "fuelType": "Petrol",
+                "seatingCapacity": 5
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where can I rent a self drive car near SRM University?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Drivo offers self drive car rentals near SRM University in Kattankulathur and Potheri. Book online and we'll deliver to your location."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is self drive car rental available in Guduvanchery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Drivo provides self drive cars in Guduvanchery, Maraimalai Nagar, Urapakkam and surrounding areas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What cars are available for self drive rental in Chennai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Currently we offer the Hyundai Exter (Petrol, Manual, AC) for self drive rental. More vehicles coming soon."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #2563eb;
+      --accent:  #38bdf8;
+      --bg:      #060b14;
+      --card:    rgba(15, 25, 50, 0.75);
+      --border:  rgba(255,255,255,0.08);
+      --text:    #f0f6ff;
+      --muted:   #94a3b8;
+      --faint:   #475569;
+      --success: #22c55e;
+      --radius:  14px;
+      --font:    'Inter', system-ui, sans-serif;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 16px;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80vw;
+      height: 60vh;
+      background: radial-gradient(ellipse, rgba(37,99,235,0.18) 0%, transparent 70%);
+      filter: blur(60px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(37,99,235,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37,99,235,0.05) 1px, transparent 1px);
+      background-size: 56px 56px;
+      mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, black 20%, transparent 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Card ── */
+    .card {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 540px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px 36px;
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.55);
+    }
+
+    /* ── Logo ── */
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .logo-mark {
+      width: 46px;
+      height: 46px;
+      flex-shrink: 0;
+    }
+
+    .brand-text { line-height: 1; }
+
+    .brand-name {
+      font-size: 1.7rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      background: linear-gradient(135deg, #60a5fa 0%, #38bdf8 50%, #2563eb 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .brand-tag {
+      font-size: 0.7rem;
+      color: var(--faint);
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    /* ── Form ── */
+    .form-group { margin-bottom: 18px; }
+
+    label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 7px;
+    }
+
+    .label-required::after {
+      content: ' *';
+      color: #f87171;
+    }
+
+    input, select {
+      width: 100%;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      padding: 12px 14px;
+      font-size: 0.93rem;
+      font-family: var(--font);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    input:focus, select:focus {
+      border-color: var(--primary);
+      background: rgba(37,99,235,0.07);
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.14);
+    }
+
+    input::placeholder { color: var(--faint); }
+
+    select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 13px center;
+      padding-right: 36px;
+    }
+
+    select option { background: #0d1f3c; color: var(--text); }
+
+    /* Trip type pills */
+    .pill-group { display: flex; gap: 8px; }
+    .pill-group input[type="radio"] { display: none; }
+    .pill-group label {
+      flex: 1;
+      text-align: center;
+      padding: 10px 8px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0;
+      text-transform: none;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-bottom: 0;
+    }
+    .pill-group input[type="radio"]:checked + label {
+      border-color: var(--primary);
+      background: rgba(37,99,235,0.15);
+      color: var(--accent);
+    }
+
+    /* Car card */
+    .car-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      cursor: pointer;
+      transition: all 0.2s;
+      position: relative;
+    }
+    .car-card:has(input:checked) {
+      border-color: var(--primary);
+      background: rgba(37,99,235,0.1);
+    }
+    .car-card input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      width: 0; height: 0;
+    }
+    .car-thumb { font-size: 2.2rem; line-height: 1; }
+    .car-info { flex: 1; }
+    .car-name { font-size: 0.95rem; font-weight: 700; margin-bottom: 3px; }
+    .car-specs { font-size: 0.76rem; color: var(--muted); }
+    .car-check {
+      width: 20px; height: 20px;
+      border: 2px solid var(--border);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem;
+      color: transparent;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+    .car-card:has(input:checked) .car-check {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    /* Divider */
+    .divider { height: 1px; background: var(--border); margin: 22px 0; }
+
+    /* Submit */
+    .btn-submit {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 11px;
+      background: linear-gradient(135deg, #2563eb, #38bdf8);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: var(--font);
+      cursor: pointer;
+      letter-spacing: 0.01em;
+      transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(37,99,235,0.4);
+      margin-top: 8px;
+    }
+    .btn-submit:hover { opacity: 0.92; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(37,99,235,0.5); }
+    .btn-submit:active { transform: translateY(0); }
+    .btn-submit:disabled { cursor: not-allowed; }
+
+    /* Success */
+    .success {
+      display: none;
+      margin-top: 18px;
+      background: rgba(34,197,94,0.1);
+      border: 1px solid rgba(34,197,94,0.3);
+      border-radius: 10px;
+      padding: 18px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #4ade80;
+      text-align: center;
+      line-height: 1.7;
+    }
+    .success.show { display: block; animation: fadeUp 0.35s ease; }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+
+    /* Field error */
+    .field-error { font-size: 0.75rem; color: #f87171; margin-top: 5px; display: none; }
+    input.invalid, select.invalid { border-color: #ef4444; }
+
+    /* ── SEO hidden content (visible to crawlers, unobtrusive) ── */
+    .seo-block {
+      position: relative;
+      z-index: 1;
+      max-width: 540px;
+      width: 100%;
+      margin-top: 20px;
+      padding: 16px 20px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 12px;
+      font-size: 0.75rem;
+      color: var(--faint);
+      line-height: 1.8;
+      text-align: center;
+    }
+    .seo-block a { color: var(--faint); text-decoration: underline; text-underline-offset: 2px; }
+
+    @media (max-width: 480px) {
+      .card { padding: 28px 20px; }
+      .pill-group { flex-direction: column; }
+      .pill-group label { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+
+  <!-- Logo -->
+  <div class="brand">
+    <!-- SVG logomark: stylised "D" with a road streak -->
+    <svg class="logo-mark" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Drivo logo">
+      <rect width="46" height="46" rx="12" fill="url(#lg)"/>
+      <!-- D shape -->
+      <path d="M13 12h8c5.523 0 10 4.477 10 10s-4.477 10-10 10h-8V12z" fill="white" fill-opacity="0.95"/>
+      <!-- road streak -->
+      <rect x="18" y="21" width="14" height="2" rx="1" fill="url(#lg2)" opacity="0.9"/>
+      <rect x="21" y="25" width="8"  height="1.5" rx="0.75" fill="white" opacity="0.5"/>
+      <defs>
+        <linearGradient id="lg" x1="0" y1="0" x2="46" y2="46" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#2563eb"/>
+          <stop offset="1" stop-color="#38bdf8"/>
+        </linearGradient>
+        <linearGradient id="lg2" x1="18" y1="22" x2="32" y2="22" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#38bdf8"/>
+          <stop offset="1" stop-color="#2563eb"/>
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <div class="brand-text">
+      <div class="brand-name">drivo</div>
+      <div class="brand-tag">Self Drive Cars · Chennai</div>
+    </div>
+  </div>
+
+  <h1>Book a Self Drive Car</h1>
+  <p class="subtitle">Available in Guduvanchery, SRM, Tambaram &amp; nearby areas.</p>
+
+  <form id="booking-form" novalidate>
+
+    <!-- Name -->
+    <div class="form-group">
+      <label for="name" class="label-required">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="e.g. Karthik Rajan" autocomplete="name" />
+      <div class="field-error" id="err-name">Please enter your name.</div>
+    </div>
+
+    <!-- Phone -->
+    <div class="form-group">
+      <label for="phone" class="label-required">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g. 98400 00000" autocomplete="tel" maxlength="15" />
+      <div class="field-error" id="err-phone">Please enter a valid 10-digit number.</div>
+    </div>
+
+    <!-- City -->
+    <div class="form-group">
+      <label for="city">Pick-up Area</label>
+      <select id="city" name="city">
+        <option value="Guduvanchery">Guduvanchery</option>
+        <option value="SRM / Kattankulathur">SRM / Kattankulathur</option>
+        <option value="Potheri">Potheri</option>
+        <option value="Maraimalai Nagar">Maraimalai Nagar</option>
+        <option value="Urapakkam">Urapakkam</option>
+        <option value="Tambaram">Tambaram</option>
+        <option value="Chennai">Chennai (Other)</option>
+      </select>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Trip Type -->
+    <div class="form-group">
+      <label>Trip Type</label>
+      <div class="pill-group">
+        <input type="radio" name="trip_type" id="t-city" value="Within City" checked />
+        <label for="t-city">🏙️ Within City</label>
+
+        <input type="radio" name="trip_type" id="t-out" value="Outstation" />
+        <label for="t-out">🛣️ Outstation</label>
+
+        <input type="radio" name="trip_type" id="t-sub" value="Subscription" />
+        <label for="t-sub">📅 Subscription</label>
+      </div>
+    </div>
+
+    <!-- Check-in -->
+    <div class="form-group">
+      <label>Check-in</label>
+      <input type="datetime-local" id="checkin" name="checkin" />
+      <div class="field-error" id="err-checkin">Please select a check-in date and time.</div>
+    </div>
+
+    <!-- Check-out -->
+    <div class="form-group">
+      <label>Check-out</label>
+      <input type="datetime-local" id="checkout" name="checkout" />
+      <div class="field-error" id="err-checkout">Check-out must be after check-in.</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Car -->
+    <div class="form-group">
+      <label>Select Car</label>
+      <label class="car-card" for="car-exter">
+        <input type="radio" name="car" id="car-exter" value="Hyundai Exter" checked />
+        <div class="car-thumb">🚙</div>
+        <div class="car-info">
+          <div class="car-name">Hyundai Exter</div>
+          <div class="car-specs">5 seats · Petrol · Manual · AC · Compact SUV</div>
+        </div>
+        <div class="car-check">✓</div>
+      </label>
+    </div>
+
+    <!-- Submit -->
+    <button type="submit" class="btn-submit">Confirm Booking →</button>
+
+    <div class="success" id="success-msg">
+      ✅ We have received your request.<br />
+      <span style="font-weight:400;font-size:0.88rem;color:rgba(74,222,128,0.85)">We will reach out to you soon.</span>
+    </div>
+
+  </form>
+</div>
+
+<!-- SEO: location + keyword signals for Google -->
+<div class="seo-block" role="contentinfo">
+  Self drive car rental in <strong>Guduvanchery</strong>, <strong>SRM University</strong>,
+  <strong>Kattankulathur</strong>, <strong>Potheri</strong>, <strong>Maraimalai Nagar</strong>,
+  <strong>Urapakkam</strong>, <strong>Tambaram</strong> &amp; <strong>Chennai</strong>.
+  Rent a car by the hour, day or month. New cars · Petrol · AC.
+</div>
+
+<script>
+  // Set min datetime to now (local time)
+  const nowISO = new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
+    .toISOString().slice(0, 16);
+  document.getElementById('checkin').min  = nowISO;
+  document.getElementById('checkout').min = nowISO;
+
+  document.getElementById('checkin').addEventListener('change', function () {
+    const co = document.getElementById('checkout');
+    if (!co.value || co.value < this.value) co.value = this.value;
+    co.min = this.value;
+  });
+
+  document.getElementById('booking-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    let valid = true;
+
+    // Name (mandatory)
+    const name = document.getElementById('name');
+    const errName = document.getElementById('err-name');
+    if (!name.value.trim()) {
+      name.classList.add('invalid'); errName.style.display = 'block'; valid = false;
+    } else {
+      name.classList.remove('invalid'); errName.style.display = 'none';
+    }
+
+    // Phone (mandatory)
+    const phone = document.getElementById('phone');
+    const errPhone = document.getElementById('err-phone');
+    if (phone.value.replace(/\D/g, '').length < 10) {
+      phone.classList.add('invalid'); errPhone.style.display = 'block'; valid = false;
+    } else {
+      phone.classList.remove('invalid'); errPhone.style.display = 'none';
+    }
+
+    // Check-in
+    const ci = document.getElementById('checkin');
+    const errCi = document.getElementById('err-checkin');
+    if (!ci.value) {
+      ci.classList.add('invalid'); errCi.style.display = 'block'; valid = false;
+    } else {
+      ci.classList.remove('invalid'); errCi.style.display = 'none';
+    }
+
+    // Check-out
+    const co = document.getElementById('checkout');
+    const errCo = document.getElementById('err-checkout');
+    if (!co.value || (ci.value && co.value < ci.value)) {
+      co.classList.add('invalid'); errCo.style.display = 'block'; valid = false;
+    } else {
+      co.classList.remove('invalid'); errCo.style.display = 'none';
+    }
+
+    if (!valid) return;
+
+    const btn = this.querySelector('.btn-submit');
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+    btn.style.opacity = '0.7';
+
+    const payload = {
+      name:     name.value.trim(),
+      phone:    phone.value.trim(),
+      city:     document.getElementById('city').value,
+      tripType: document.querySelector('input[name="trip_type"]:checked').value,
+      checkin:  ci.value.replace('T', ' '),
+      checkout: co.value.replace('T', ' '),
+      car:      document.querySelector('input[name="car"]:checked').value,
+    };
+
+    fetch('/.netlify/functions/notify', {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify(payload),
+    })
+      .catch(() => {})
+      .finally(() => {
+        document.getElementById('success-msg').classList.add('show');
+        btn.textContent = '✓ Request Sent';
+        btn.style.opacity = '0.6';
+      });
+  });
+
+  document.querySelectorAll('input, select').forEach(el => {
+    el.addEventListener('input', () => el.classList.remove('invalid'));
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+[build]
+  publish   = "Carfleet"
+  functions = "Carfleet/netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
