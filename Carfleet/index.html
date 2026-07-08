@@ -359,6 +359,24 @@
     /* Divider */
     .divider { height: 1px; background: var(--border); margin: 22px 0; }
 
+    /* Rate */
+    .rate-box {
+      margin-top: 4px;
+      background: rgba(37,99,235,0.08);
+      border: 1px solid rgba(37,99,235,0.25);
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 0.88rem;
+    }
+    .rate-row { display: flex; justify-content: space-between; align-items: center; }
+    .rate-total-row {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed rgba(255,255,255,0.08);
+      font-weight: 600;
+    }
+    .rate-value { font-weight: 700; color: var(--text); }
+
     /* Submit */
     .btn-submit {
       width: 100%;
@@ -522,6 +540,18 @@
       <div class="field-error" id="err-checkout">Check-out must be after check-in.</div>
     </div>
 
+    <!-- Rate -->
+    <div class="rate-box" id="rate-box">
+      <div class="rate-row">
+        <span>Rate</span>
+        <span class="rate-value">₹2300/day</span>
+      </div>
+      <div class="rate-row rate-total-row" id="rate-total-row">
+        <span id="rate-total-label">Total</span>
+        <span class="rate-value" id="rate-total-value">—</span>
+      </div>
+    </div>
+
     <div class="divider"></div>
 
     <!-- Car -->
@@ -564,11 +594,41 @@
   document.getElementById('checkin').min  = nowISO;
   document.getElementById('checkout').min = nowISO;
 
+  // Rate calculation
+  const RATE_PER_DAY = 2300;
+
+  function updateTotal() {
+    const ciVal = document.getElementById('checkin').value;
+    const coVal = document.getElementById('checkout').value;
+    const label = document.getElementById('rate-total-label');
+    const value = document.getElementById('rate-total-value');
+
+    if (!ciVal || !coVal) {
+      label.textContent = 'Total';
+      value.textContent = '—';
+      return;
+    }
+
+    const ms = new Date(coVal) - new Date(ciVal);
+    if (ms <= 0) {
+      label.textContent = 'Total';
+      value.textContent = '—';
+      return;
+    }
+
+    const days = Math.max(1, Math.ceil(ms / (1000 * 60 * 60 * 24)));
+    label.textContent = `Total for ${days} day${days > 1 ? 's' : ''}`;
+    value.textContent = `₹${(days * RATE_PER_DAY).toLocaleString('en-IN')}`;
+  }
+
   document.getElementById('checkin').addEventListener('change', function () {
     const co = document.getElementById('checkout');
     if (!co.value || co.value < this.value) co.value = this.value;
     co.min = this.value;
+    updateTotal();
   });
+
+  document.getElementById('checkout').addEventListener('change', updateTotal);
 
   document.getElementById('booking-form').addEventListener('submit', function (e) {
     e.preventDefault();
